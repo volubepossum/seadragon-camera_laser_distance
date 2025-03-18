@@ -12,13 +12,13 @@ find_package(rclpy REQUIRED)
 
 # Install Python modules
 install(DIRECTORY
-  image_processor
+  distance_measure
   DESTINATION lib/python${PYTHON_VERSION}/site-packages/
 )
 
 # Install Python scripts
 install(PROGRAMS
-    image_processor/image_processor_node.py
+    distance_measure/image_processor_node.py
     DESTINATION lib/${PROJECT_NAME}
     RENAME image_processor_nodes
 )
