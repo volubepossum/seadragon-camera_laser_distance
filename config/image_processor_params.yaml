@@ -1,0 +1,17 @@
+image_converter:
+  ros__parameters:
+    # Color detection parameters
+    green_color_range:
+      lower: [40, 50, 50]  # HSV lower bound
+      upper: [90, 255, 255]  # HSV upper bound
+    
+    # Image processing parameters
+    image_adjustments:
+      contrast: 1.0  # alpha value
+      brightness: 0  # beta value
+    
+    # Geometry parameters
+    distance_calculation:
+      rho: 0.083  # Distance between camera and laser in meters
+      angle1: 75  # Angle between laser and camera (degrees)
+      fov: 120    # Horizontal field of view angle (degrees)
